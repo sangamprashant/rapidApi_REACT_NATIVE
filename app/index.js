@@ -5,3 +5,5 @@ const Home = ( ) => {
         <Text>Home</Text>
     </View>
 }
+
+export default Home
