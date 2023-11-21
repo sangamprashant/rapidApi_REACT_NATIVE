@@ -15,7 +15,7 @@ import useFetch from "../../../hook/useFetch";
 
 const Popularjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch({
+  const { data, isLoading, error,refetch } = useFetch({
     endPoint: "search",
     query: {
       query: "React Developer",
@@ -30,12 +30,16 @@ const Popularjobs = () => {
     setSelectedJob(item.job_id);
   };
 
+  const handleReloadPress = () => {
+    refetch();
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular jobs</Text>
-        <TouchableOpacity>
-          <Text style={styles.headerBtn}>Show all</Text>
+        <TouchableOpacity onPress={handleReloadPress}>
+          <Text style={styles.headerBtn}>Reload</Text>
         </TouchableOpacity>
       </View>
 
