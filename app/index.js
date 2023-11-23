@@ -29,7 +29,7 @@ const YourApp = () => {
               dimension="100%"
             />
           ),
-          headerTitle: "",
+          headerTitle: "Job finder",
         }}
       />
       <ScrollView showsVerticalScrollIndicator={false}>

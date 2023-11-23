@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "react-native-app",
-    "slug": "react-native-app"
+    "slug": "react-native-app",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b4fb642f-3bc4-4afc-be0b-df9f5dd58635"
+      }
+    },
+    "android": {
+      "package": "com.sangamprashant.reactnativeapp"
+    }
   }
 }
